@@ -1,0 +1,11 @@
+package com.robot.mr.enums;
+
+public enum EventType {
+	ESP32_ONLINE,
+	ESP32_OFFLINE,
+	SENSOR_DATA,
+	PHOTO_CAPTURED,
+	COMMAND_EXECUTED,
+	COMMUNICATION_ERROR,
+	MOTION_ALERT
+}
