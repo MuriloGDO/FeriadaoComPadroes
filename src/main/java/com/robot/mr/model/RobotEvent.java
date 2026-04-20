@@ -11,8 +11,6 @@ public class RobotEvent {
 	private String payload;
 	private String source;
 	private LocalDateTime timestamp;
-	
-	public RobotEvent() {}
 
 	private RobotEvent(EventType type, String payload, String source) {
 		this.id = UUID.randomUUID();
