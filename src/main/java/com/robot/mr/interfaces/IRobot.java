@@ -7,6 +7,6 @@ public interface IRobot {
 	void turnRight(int degrees);
 	void stop();
 	
-	String capturePhoto();
+	void capturePhoto();
 	void triggerAlert(String message);
 }
