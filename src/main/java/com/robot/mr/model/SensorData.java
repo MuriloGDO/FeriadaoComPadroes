@@ -17,13 +17,13 @@ public class SensorData {
 
 	public SensorData() {}
 
-	public SensorData(String sensorId, SensorType type, double value, String unit, LocalDateTime timestamp) {
+	public SensorData(String sensorId, SensorType type, double value, String unit) {
 		super();
 		this.sensorId = sensorId;
 		this.type = type;
 		this.value = value;
 		this.unit = unit;
-		this.timestamp = timestamp;
+		this.timestamp = LocalDateTime.now();
 	}
 	
 	public String toJson() {
