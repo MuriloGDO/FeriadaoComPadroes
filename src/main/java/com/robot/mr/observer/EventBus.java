@@ -16,7 +16,7 @@ import com.robot.mr.model.RobotEvent;
 public class EventBus {
 	private static final Logger logger = Logger.getLogger(EventBus.class.getName());
 	
-	private static EventBus instance;
+	private static volatile EventBus instance;
 	
 	private final Map<EventType, List<IEventListener>> listeners;
 	
