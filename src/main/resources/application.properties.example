@@ -1,0 +1,9 @@
+spring.application.name=mr
+
+# Configura��es do ESP32
+robot.esp32.host=192.168...
+robot.esp32.port=8000
+
+# Configura��es da OpenAI
+robot.openai.key=sk-...
+robot.openai.model=gpt-4o
