@@ -23,7 +23,7 @@ public class RobotCommand {
 		this.params = params;
 	}
 	
-	public RobotCommand withParams(String key, Object value) {
+	public RobotCommand withParam(String key, Object value) {
 		this.params.put(key, value);
 		return this;
 	}
