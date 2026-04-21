@@ -1,5 +1,8 @@
 spring.application.name=mr
 
+# Porta do servidor Java
+server.port=8080
+
 # Configurações do ESP32
 robot.esp32.host=192.168...
 robot.esp32.port=8000
@@ -7,3 +10,6 @@ robot.esp32.port=8000
 # Configurações da OpenAI
 robot.openai.key=sk-...
 robot.openai.model=gpt-4o
+
+# Logs — INFO para produção, FINE para debug
+logging.level.com.robot=INFO
