@@ -1,4 +1,4 @@
-package controller;
+package com.robot.mr.controller;
 
 import java.util.Map;
 

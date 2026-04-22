@@ -1,4 +1,4 @@
-package factory;
+package com.robot.mr.factory;
 
 import com.robot.mr.enums.SensorType;
 import com.robot.mr.interfaces.ISensor;

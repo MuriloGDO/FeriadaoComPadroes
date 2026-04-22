@@ -1,14 +1,14 @@
-package factory;
+package com.robot.mr.factory;
 
 import com.robot.mr.enums.SensorType;
 import com.robot.mr.interfaces.ISensor;
 import com.robot.mr.model.SensorData;
 
-public class TemperatureSensor implements ISensor {
+public class CameraSensor implements ISensor {
 	private final String id;
     private SensorData lastReading;
- 
-    public TemperatureSensor(String id) {
+
+    public CameraSensor(String id) {
         this.id = id;
     }
  
@@ -19,18 +19,18 @@ public class TemperatureSensor implements ISensor {
  
     @Override
     public SensorType getType() {
-        return SensorType.TEMPERATURE;
+        return SensorType.CAMERA;
     }
- 
+
     @Override
     public SensorData readData() {
         if (lastReading == null) {
-            return new SensorData(id, SensorType.TEMPERATURE, -273.15, "°C");
+            return new SensorData(id, SensorType.CAMERA, 0.0, "bytes");
         }
         return lastReading;
     }
  
-    public void updateReading(double celsius) {
-        this.lastReading = new SensorData(id, SensorType.TEMPERATURE, celsius, "°C");
+    public void updateReading(double imageSizeBytes) {
+        this.lastReading = new SensorData(id, SensorType.CAMERA, imageSizeBytes, "bytes");
     }
 }

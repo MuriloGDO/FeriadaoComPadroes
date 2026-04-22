@@ -1,4 +1,4 @@
-package config;
+package com.robot.mr.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -8,9 +8,9 @@ import org.springframework.context.annotation.Primary;
 import com.robot.mr.adapter.ESP32Adapter;
 import com.robot.mr.interfaces.IRobot;
 import com.robot.mr.proxy.CameraProxy;
+import com.robot.mr.singleton.WifiConnectionManager;
 
 import jakarta.annotation.PostConstruct;
-import singleton.WifiConnectionManager;
 
 @Configuration
 public class RobotConfig {

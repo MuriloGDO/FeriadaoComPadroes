@@ -15,8 +15,7 @@ import com.robot.mr.model.OpenAIResponse;
 import com.robot.mr.model.RobotEvent;
 import com.robot.mr.observer.EventBus;
 import com.robot.mr.proxy.CameraProxy;
-
-import singleton.WifiConnectionManager;
+import com.robot.mr.singleton.WifiConnectionManager;
 
 @Component
 public class RobotController {

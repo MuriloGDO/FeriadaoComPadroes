@@ -13,8 +13,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.robot.mr.enums.EventType;
 import com.robot.mr.model.RobotEvent;
 import com.robot.mr.observer.EventBus;
-
-import singleton.WifiConnectionManager;
+import com.robot.mr.singleton.WifiConnectionManager;
 
 @Component
 public class RobotWebSocketHandler extends TextWebSocketHandler {

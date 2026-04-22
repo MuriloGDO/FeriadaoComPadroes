@@ -1,4 +1,4 @@
-package singleton;
+package com.robot.mr.singleton;
 
 import java.util.logging.Logger;
 
